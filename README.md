@@ -78,7 +78,7 @@ We provide:
 - **Trained model
 - **Custom data (labeled with three distance classes: `Far`, `Close`, `Good`)
 
-
+---
 
 ### Net Defect Detection (YOLOv5)
 
@@ -89,9 +89,9 @@ This module uses a custom-trained **YOLOv5** model to detect **net defects**, sp
 - `Test data/`: Contains sample videos to test the trained model.
 - `dataset/`: Includes the custom dataset used for training, with annotations for *holes* and *plastic*.
 
----
 
-#### 🔧 Setup
+
+####  Setup
 
 1. Clone the YOLOv5 repository:
 
@@ -113,7 +113,7 @@ python yolo_inference.py
 
 This will open a window displaying detections with bounding boxes and FPS.
 
-
+---
 
 ##  Real-Time ROS2 Interface
 
