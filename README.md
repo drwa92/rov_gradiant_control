@@ -63,8 +63,6 @@ rov_gradiant_control/
 git clone https://github.com/drwa92/rov_gradiant_control.git
 cd rov_gradiant_control
 
-# Install dependencies
-pip install -r requirements.txt
 ```
 
 ---
@@ -77,8 +75,8 @@ This module uses the publicly available [MobileNetV2](https://pytorch.org/vision
 
 We provide:
 
-- **[Trained weights](`mobilenetv2_best.pt`)
-- **[Custom dataset] (labeled with three distance classes: `Far`, `Close`, `Good`)
+- **Trained model
+- **Custom data (labeled with three distance classes: `Far`, `Close`, `Good`)
 
 
 
