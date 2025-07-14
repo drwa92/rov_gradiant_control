@@ -6,7 +6,7 @@ This repository contains the source code, models, and scripts used in the paper:
 
 ---
 
-## 📌 Overview
+##  Overview
 
 This project presents a novel **gradient-aware active vision system** for aquaculture net inspection using a **commercial ROV**. It integrates:
 
@@ -16,12 +16,12 @@ This project presents a novel **gradient-aware active vision system** for aquacu
 
 ---
 
-## 🎯 Key Features
+##  Key Features
 
-- 🔍 **Gradient-aware pose control** using CNNs for desired inspection distance.
-- 🎯 **Dual-sided gradient regulation** for precise yaw control.
-- 🧠 **YOLOv5-based net defect detection** (holes, plastic debris).
-- 🧪 **Tested in both pool and real fish farm environments**.
+-  **Gradient-aware pose control** using CNNs for desired inspection distance.
+-  **Dual-sided gradient regulation** for precise yaw control.
+-  **YOLOv5-based net defect detection** (holes, plastic debris).
+-  **Tested in both pool and real fish farm environments**.
 
 ---
 
@@ -44,7 +44,7 @@ rov_gradiant_control/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Requirements
 
@@ -68,9 +68,9 @@ pip install -r requirements.txt
 
 ---
 
-## 🧠 Training Models
+##  Training Models
 
-### 📏 Distance Classification
+###  Distance Classification
 
 ```bash
 cd distance_classification
@@ -86,7 +86,7 @@ python train.py --img 416 --batch 16 --epochs 50 --data net.yaml --weights yolov
 
 ---
 
-## 📡 Real-Time ROS2 Interface
+##  Real-Time ROS2 Interface
 
 Ensure your Blueye ROV is connected and the camera stream is available.
 
@@ -98,7 +98,7 @@ This node reads camera input, estimates distance/yaw via CNN+gradient, and sends
 
 ---
 
-## 📊 Evaluation
+##  Evaluation
 
 Use the `visualization/` scripts to generate error plots for:
 
@@ -116,7 +116,7 @@ Use the `visualization/` scripts to generate error plots for:
 
 ---
 
-## 📄 Citation
+##  Citation
 
 If you use this code or dataset in your work, please cite:
 
