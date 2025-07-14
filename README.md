@@ -31,11 +31,12 @@ This project presents a novel **gradient-aware active vision system** for aquacu
 rov_gradiant_control/
 ├── distance_classification/     # CNN-based distance classifier (MobileNetV2, etc.)
 │   ├── dataset/                 # Net images for training (annotated)
-│   ├── models/                 # Saved PyTorch models
+│   ├── MobileNetV2/                 # Saved PyTorch models
 │   └── mobileNetV2.pth
-├── net_defect_detection/       # YOLOv5 model training and inference
-│   ├── data/                   # Labeled images and annotations (holes, plastic)
-│   ├── yolov5/                 # YOLOv5 trained weights
+├── defect_detection/       # YOLOv5 model and dataset
+│   ├── dataset/                   # Labeled images and annotations (holes, plastic)
+|   ├── Test data/                   # Sample videos for testing the trained model
+│   ├── detection model/yolov5/                 # YOLOv5 trained weights
 │   └── best.pth
 ├── disance_control/               # Control module for ROV pose 
 │   ├── distance_controller.py
