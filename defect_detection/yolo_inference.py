@@ -93,7 +93,7 @@ class YOLODetector:
 if __name__ == "__main__":
     # Example usage:
     detector = YOLODetector(
-        capture_source='1.mp4',                        # or ='rtsp://192.168.1.101:8554/test'incase of Blueye ROV camera.
+        capture_source='/Test data/close.mp4',                        # or ='rtsp://192.168.1.101:8554/test'incase of Blueye ROV camera.
         model_path='detection model/yolov5/best.pt',        # your custom .pt file
         yolov5_repo='yolov5'             # path to local yolov5 repo
     )
