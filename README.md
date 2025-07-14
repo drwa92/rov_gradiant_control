@@ -150,7 +150,13 @@ This script reads camera input, estimates distance/yaw via CNN+gradient, and sen
 
 ## Sample Results
 
+<p align="center">
+  <img src="media/qual_close.jpg" alt="YOLOv5 Close Distance Qualitative Evaluation" width="800"/>
+</p>
 
+<p align="center"><em>
+Qualitative evaluation of the YOLOv5 model for aquaculture net pens defect detection on close-distance dataset. The first two columns show the input and the corresponding detection results for a close-distance dataset. The third column shows the corresponding gradient information of the input image.
+</em></p>
 ---
 
 ##  Citation
