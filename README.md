@@ -7,6 +7,7 @@ This repository contains the source code, models, and scripts used in the paper:
 ---
 
 ##  Overview
+![Project Overview](media/project.png)
 
 This project presents a novel **gradient-aware active vision system** for aquaculture net inspection using a **commercial ROV**. It integrates:
 
