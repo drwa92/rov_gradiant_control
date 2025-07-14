@@ -83,8 +83,17 @@ We provide:
 ### 🕳️ Net Defect Detection (YOLOv5)
 
 ```bash
-cd net_defect_detection/yolov5
-python train.py --img 416 --batch 16 --epochs 50 --data net.yaml --weights yolov5s.pt
+cd defect_detection
+git clone https://github.com/ultralytics/yolov5
+```
+
+
+there are two folders: Test data and dataset
+Test data provide video for testing the train model and dataset provide the customd dataset used for net defect (holes and plastic detection) with annotation.
+to check the trained model,
+
+```bash
+python yolo_inference.py
 ```
 
 ---
