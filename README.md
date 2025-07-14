@@ -53,7 +53,7 @@ rov_gradiant_control/
 - PyTorch
 - OpenCV
 - ROS2 (Foxy or Humble)
-- YOLOv5 dependencies (`requirements.txt` inside `yolov5/`)
+- YOLOv5 repo (https://github.com/ultralytics/yolov5)
 - Blueye Python SDK (if deploying on Blueye ROV)
 
 ### Installation
@@ -69,14 +69,18 @@ pip install -r requirements.txt
 
 ---
 
-##  Training Models
 
-###  Distance Classification
 
-```bash
-cd distance_classification
-python train_distance_model.py --model MobileNetV2 --epochs 50
-```
+### 📏 Distance Classification Module
+
+This module uses the publicly available [MobileNetV2](https://pytorch.org/vision/stable/models/generated/torchvision.models.mobilenet_v2.html) model as a backbone for classifying the ROV's inspection distance relative to the aquaculture net.
+
+We provide:
+
+- **[Trained weights](`mobilenetv2_best.pt`)
+- **[Custom dataset] (labeled with three distance classes: `Far`, `Close`, `Good`)
+
+
 
 ### 🕳️ Net Defect Detection (YOLOv5)
 
