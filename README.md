@@ -137,21 +137,10 @@ This script reads camera input, estimates distance/yaw via CNN+gradient, and sen
 
 ---
 
-##  Evaluation
 
-Use the `visualization/` scripts to generate error plots for:
 
-- Distance convergence (gradient-based)
-- Yaw alignment performance
-- Detection accuracy (mAP, precision, recall)
+## Sample Results
 
----
-
-## 📸 Sample Results
-
-| Distance Adjustment | Defect Detection |
-|---------------------|------------------|
-| ![](media/distance_control.gif) | ![](media/defect_detection.png) |
 
 ---
 
@@ -163,7 +152,7 @@ If you use this code or dataset in your work, please cite:
 @article{akram2025rov,
   title={Active vision-based real-time aquaculture net pens inspection using ROV},
   author={Akram, Waseem and Din, Muhayy Ud and Heshmat, Mohamed and Casavola, Alessandro and Seneviratne, Lakmal and Hussain, Irfan},
-  journal={Scientific Reports},
+  journal={},
   year={2025}
 }
 ```
@@ -172,5 +161,5 @@ If you use this code or dataset in your work, please cite:
 
 ## 🤝 Acknowledgements
 
-This work is supported by **Khalifa University** under Award Nos. RC1-2018-KUCARS-8474000136, CIRA-2021-085, and MBZIRC-8434000194.  
+- This work is supported by **Khalifa University** under Award Nos. RC1-2018-KUCARS-8474000136, CIRA-2021-085, and MBZIRC-8434000194.  
 Special thanks to **LABUST, University of Zagreb** for supporting sea trials and data collection.
