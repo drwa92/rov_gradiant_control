@@ -75,7 +75,7 @@ This module utilizes the publicly available [MobileNetV2](https://pytorch.org/vi
 
 ### Provided Assets
 
-- **Trained Model:** [`mobilenetv2.pth`](distance_classification/MobileNetV2/mobilenetv2.pth)
+- **Trained Model:** [`mobilenetv2.pth`](distance_classification/MobileNetV2/mobilenetv2_best.pth)
 - **Custom Dataset:** Located in [`distance_classification/dataset`](distance_classification/dataset), annotated with three distance classes:
   - `Far`
   - `Close`
@@ -91,7 +91,7 @@ python distance_classification.py
 ```
 ---
 
-## Net Defect Detection (YOLOv5)
+## Net Defect Detection Module
 
 This module uses a custom-trained **YOLOv5** model to detect **net defects**, specifically *holes* and *plastic debris*. The code supports input from videos, webcam, or a live ROV stream.
 
@@ -125,15 +125,15 @@ This will open a window displaying detections with bounding boxes and FPS.
 
 ---
 
-##  Real-Time ROS2 Interface
+##  Real-Time ROV Control Module
 
 Ensure your Blueye ROV is connected and the camera stream is available.
 
 ```bash
-ros2 run ros2_control pose_estimation_node.py
+Python distance_controller.py
 ```
 
-This node reads camera input, estimates distance/yaw via CNN+gradient, and sends PID control commands to the ROV.
+This script reads camera input, estimates distance/yaw via CNN+gradient, and sends movement commands to the ROV.
 
 ---
 
