@@ -17,12 +17,20 @@ This project presents a novel **gradient-aware active vision system** for aquacu
 
 ---
 
-##  Key Features
+## Key Features
 
--  **Gradient-aware pose control** using CNNs for desired inspection distance.
--  **Dual-sided gradient regulation** for precise yaw control.
--  **YOLOv5-based net defect detection** (holes, plastic debris).
--  **Tested in both pool and real fish farm environments**.
+- **Gradient-aware pose control** using CNNs for desired inspection distance.
+- **Dual-sided gradient regulation** for precise yaw control.
+- **YOLOv5-based net defect detection** (holes, plastic debris).
+- **Tested in both pool and real fish farm environments**.
+
+<p align="center">
+  <img src="media/methodology.png" alt="Methodology Diagram" width="600"/>
+</p>
+
+<p align="center"><em>
+Proposed block diagram of the system. The ROV receives camera input and executes inspection tasks, while the topside server handles net defect detection and control signal generation. Deep learning is employed for defect classification, and pre-defined setpoints for depth and yaw are sent to the ROV for motion control.
+</em></p>
 
 ---
 
