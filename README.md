@@ -69,7 +69,7 @@ cd rov_gradiant_control
 
 
 
-### 📏 Distance Classification Module
+### Distance Classification Module
 
 This module uses the publicly available [MobileNetV2](https://pytorch.org/vision/stable/models/generated/torchvision.models.mobilenet_v2.html) model as a backbone for classifying the ROV's inspection distance relative to the aquaculture net.
 
@@ -80,11 +80,11 @@ We provide:
 
 
 
-### 🕳️ Net Defect Detection (YOLOv5)
+### Net Defect Detection (YOLOv5)
 
 This module uses a custom-trained **YOLOv5** model to detect **net defects**, specifically *holes* and *plastic debris*. The code supports input from videos, webcam, or a live ROV stream.
 
-#### 📁 Folder Structure
+#### Folder Structure
 
 - `Test data/`: Contains sample videos to test the trained model.
 - `dataset/`: Includes the custom dataset used for training, with annotations for *holes* and *plastic*.
@@ -99,22 +99,11 @@ This module uses a custom-trained **YOLOv5** model to detect **net defects**, sp
 cd defect_detection
 git clone https://github.com/ultralytics/yolov5
 ```
-
-2. Place your trained weights (e.g., `yolov5s_custom.pt`) in the appropriate `weights/` folder (if applicable).
-
 ---
 
-#### 🚀 Running Inference
+#### Running Inference
 
 To run detection on a test video or a live ROV stream, edit the `capture_source` in `yolo_inference.py`:
-
-```python
-detector = YOLODetector(
-    capture_source='Test data/test_video.mp4',  # or 0 for webcam, or RTSP URL
-    model_path='weights/yolov5s_custom.pt',
-    yolov5_repo='defect_detection/yolov5'
-)
-```
 
 Then launch the script:
 
@@ -123,6 +112,8 @@ python yolo_inference.py
 ```
 
 This will open a window displaying detections with bounding boxes and FPS.
+
+
 
 ##  Real-Time ROS2 Interface
 
