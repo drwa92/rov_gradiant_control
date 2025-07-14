@@ -69,14 +69,25 @@ cd rov_gradiant_control
 
 
 
-### Distance Classification Module
+###  Distance Classification Module
 
-This module uses the publicly available [MobileNetV2](https://pytorch.org/vision/stable/models/generated/torchvision.models.mobilenet_v2.html) model as a backbone for classifying the ROV's inspection distance relative to the aquaculture net.
+This module utilizes the publicly available [MobileNetV2](https://pytorch.org/vision/stable/models/generated/torchvision.models.mobilenet_v2.html) architecture to classify the ROV's inspection distance relative to the aquaculture net.
 
-We provide:
+#### Provided Assets
 
-- **Trained model
-- **Custom data (labeled with three distance classes: `Far`, `Close`, `Good`)
+- **Trained Model:** [`mobilenetv2.pth`](distance_classification/MobileNetV2/mobilenetv2.pth)
+- **Custom Dataset:** Located in [`distance_classification/dataset`](distance_classification/dataset), annotated with three distance classes:
+  - `Far`
+  - `Close`
+  - `Good`
+
+
+#### Inference Example
+
+To run predictions using the trained model:
+
+```bash
+python distance_classification.py
 
 ---
 
