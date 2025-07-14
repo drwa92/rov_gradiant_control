@@ -2,7 +2,7 @@
 
 This repository contains the source code, models, and scripts used in the paper:
 
-> **Waseem Akram et al.**, *"Active vision-based real-time aquaculture net pens inspection using ROV"*, Scientific Reports, 2025.
+> **Waseem Akram et al.**, *"Active vision-based real-time aquaculture net pens inspection using ROV"*, 2025.
 
 ---
 
@@ -13,7 +13,6 @@ This project presents a novel **gradient-aware active vision system** for aquacu
 - A **learning-based pose controller** to maintain optimal ROV positioning using image gradients.
 - A **CNN-based distance classification model** to support robust pose estimation.
 - A **YOLO-based defect detector** for identifying net holes and plastic debris.
-- A real-time control loop implemented in **ROS2**.
 
 ---
 
@@ -22,7 +21,6 @@ This project presents a novel **gradient-aware active vision system** for aquacu
 - 🔍 **Gradient-aware pose control** using CNNs for desired inspection distance.
 - 🎯 **Dual-sided gradient regulation** for precise yaw control.
 - 🧠 **YOLOv5-based net defect detection** (holes, plastic debris).
-- 📡 **Real-time ROS2 interface** to control and monitor a Blueye Pro ROV.
 - 🧪 **Tested in both pool and real fish farm environments**.
 
 ---
@@ -34,17 +32,14 @@ rov_gradiant_control/
 ├── distance_classification/     # CNN-based distance classifier (MobileNetV2, etc.)
 │   ├── dataset/                 # Net images for training (annotated)
 │   ├── models/                 # Saved PyTorch models
-│   └── train_distance_model.py
+│   └── mobileNetV2.pth
 ├── net_defect_detection/       # YOLOv5 model training and inference
 │   ├── data/                   # Labeled images and annotations (holes, plastic)
-│   ├── yolov5/                 # YOLOv5 training framework
-│   └── detect.py
-├── ros2_control/               # ROS2 interface and control loop
-│   ├── depth_controller.py
-│   ├── yaw_controller.py
-│   └── pose_estimation_node.py
-├── visualization/              # Tools for plotting gradient and yaw error
-└── README.md                   # This file
+│   ├── yolov5/                 # YOLOv5 trained weights
+│   └── best.pth
+├── disance_control/               # Control module for ROV pose 
+│   ├── distance_controller.py
+
 ```
 
 ---
