@@ -23,7 +23,7 @@ plt.ion()  # Interactive plotting
 IMG_SIZE = 224
 BATCH_SIZE = 16
 DATA_DIR = './dataset/ku_net_dataset'  # Update this if needed
-MODEL_PATH = './MobileNetV2/mobilenetv2.pth'
+MODEL_PATH = './MobileNetV2/mobilenetv2_best.pth'
 
 # =====================
 # Data Transforms
