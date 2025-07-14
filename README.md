@@ -99,7 +99,6 @@ This module uses a custom-trained **YOLOv5** model to detect **net defects**, sp
 cd defect_detection
 git clone https://github.com/ultralytics/yolov5
 ```
----
 
 #### Running Inference
 
